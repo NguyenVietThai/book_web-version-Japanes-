@@ -18,16 +18,16 @@
 <div class="w3-container w3-round w3-card-4 w3-half" style="margin-left:26%">
 
 	<form action="register.php" method="post">
-	<div class="w3-center"><b style="font-size:30px">Đăng ký thông tin</b></div>
-	<label class="w3-text-brown w3-small"><b>Username</b></label>
+	<div class="w3-center"><b style="font-size:30px">情報を登録する</b></div>
+	<label class="w3-text-brown w3-small"><b>ユーザー名</b></label>
 	<input class="w3-input w3-border w3-sand" type="text" id="username" name="username">
-	<label class="w3-text-brown w3-small"><b>Password</b></label>
+	<label class="w3-text-brown w3-small"><b>パスワード</b></label>
 	<input class="w3-input w3-border w3-sand" type="password" id="pass" name="pass">
-	<label class="w3-text-brown w3-small"><b>Họ tên đầy đủ</b></label>
+	<label class="w3-text-brown w3-small"><b>名前</b></label>
 	<input class="w3-input w3-border w3-sand" type="text" id="name" name="name">
-	<label class="w3-text-brown w3-small"><b>Email</b></label>
+	<label class="w3-text-brown w3-small"><b>メール</b></label>
 	<input class="w3-input w3-border w3-sand" type="text" id="email" name="email">
-	<div style="margin-left:44%"><input type="submit" name="btn_submit" value="Đăng ký"></div>
+	<div style="margin-left:44%"><input type="submit" name="btn_submit" value="サインアップ"></div>
 	</form>
 </div>
 	
@@ -44,7 +44,7 @@
 		//Kiểm tra điều kiện bắt buộc đối với các field không được bỏ trống
 		if ($username == "" || $password == "" || $name == "" || $email == "") {
 			?><script>
-			alert("Vui lòng nhập đầy đủ thông tin!");
+			alert("完全な情報を入力してください!");
 		</script><?php
 		}else{
 			//thực hiện việc lưu trữ dữ liệu vào db
@@ -62,9 +62,9 @@
 			// thực thi câu $sql với biến conn lấy từ file connection.php
 			mysqli_query($conn,$sql);
 			?><script>
-				alert("Bạn đã đăng kí thành công!");
+				alert("登録成功!");
 			</script>
-			<div style="margin-left:43%"><a href="login.php"><button class="w3-button">Bắt đầu đăng nhập</button></a></div>			
+			<div style="margin-left:43%"><a href="login.php"><button class="w3-button">ログイン</button></a></div>			
 			<?php
 		}
 	}

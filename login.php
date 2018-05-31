@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
 <head>
-	<title>Log in</title>
+	<title>ログイン</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/CSS.css">
@@ -38,7 +38,7 @@ session_start();
 			$num_rows = mysqli_num_rows($query);
 			if ($num_rows==0) {//neu bang ko co cot hay hang nao.. tuc la khong tim duoc du lieu voi cau lenh SQL nhu tren->ko co du lieu
 				?><script>
-					alert("Tên đăng nhập hoặc mật khẩu không đúng!\nVui lòng thử lại!");
+					alert("ユーザー名またはパスワードが間違っています!\n再試行する!");
 				</script><?php
 			}else{
 				//tiến hành lưu tên đăng nhập vào session để tiện xử lý sau này
@@ -59,22 +59,22 @@ session_start();
 	</div>
 	<div class="w3-border w3-container w3-round-xlarge" style="margin-left:30%;margin-right:30%">
 		<div class="w3-container">
-			<h2 style="text-align:center">Đăng nhập thông tin</h2>
+			<h2 style="text-align:center">ログイン情報</h2>
 		</div>
 		<form method="POST" action="login.php">
-			<label class="w3-text-brown w3-small"><b>Tên đăng nhập</b></label>
+			<label class="w3-text-brown w3-small"><b>ログインの名前</b></label>
 			<input class="w3-input w3-border w3-sand" type="text" name="username" size="30">
-			<label class="w3-text-brown w3-small"><b>Mật khẩu</b></label>
+			<label class="w3-text-brown w3-small"><b>パスワード</b></label>
 			<input class="w3-input w3-border w3-sand" type="password" name="password" size="30"><hr>
-			<div class="w3-center"><input class="w3-button w3-blue" name="btn_submit" type="submit" value="Đăng nhập"></div>
+			<div class="w3-center"><input class="w3-button w3-blue" name="btn_submit" type="submit" value="ログイン"></div>
 		</form>
-		<p class="w3-border w3-center">Tạo tài khoản TDT-shoponline mới</p>
-		<div class="w3-center"> <a href="register.php"class="w3-button w3-green">Đăng kí</a><span>*****</span><a href="index.php"><div class="w3-button w3-red">Cancel</div></a></div><br>
+		<p class="w3-border w3-center">新しいTDT-shoponlineアカウントを作成する</p>
+		<div class="w3-center"> <a href="register.php"class="w3-button w3-green"　title="sign up - dang ki">サインアップ</a><span>*****</span><a href="index.php"><div class="w3-button w3-red" title='cancel'>キャンセル</div></a></div><br>
 	</div>
 	<br>
 	<footer class="w3-center" style="background-color:rgba(34, 34, 51, 0.85)"> 
         <p style="color:white">Copyright by TDT-shoponline 2017</p>
-        <b>Bài tập lớn môn thực hành cơ sở dữ liệu</b>
+        <b>2017年のプロジェクト</b>
     </footer>	
 </body>
 </html>
