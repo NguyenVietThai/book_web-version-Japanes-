@@ -97,7 +97,7 @@
                 if(isset($_SESSION['username'])){
                     echo($_SESSION['username']);
                 }else{
-                    echo"Quý Khách";
+                    echo"お客様";
                 }
                 ?></div>
                 </th>
