@@ -1,0 +1,18 @@
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+#style1{
+    color:orange;
+    margin-left:13px;
+}
+#style2{
+    position: fixed;
+}
+#style3{
+    font-size:24px;
+    color:black;
+    text-align:left;
+}
+.w3-myfont {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
