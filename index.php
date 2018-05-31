@@ -105,7 +105,7 @@
                 <?php
                 if(isset($_SESSION['username'])){
                         ?>
-                            <a href="giohang.php" style="margin-left:20px"class="w3-button w3-round w3-yellow"><img title="Giỏ hàng của bạn" width="28px" src="image/icon_shop.png">
+                            <a href="giohang.php" style="margin-left:20px"class="w3-button w3-round w3-yellow"><img title="あなたのショッピングカート" width="28px" src="image/icon_shop.png">
                             <sup class="w3-red w3-round w3-large"><?php echo $so; ?></sup>
                             </a>
                         <?php
@@ -115,7 +115,7 @@
                 <th>
                     <div style="margin-top:34px;margin-left:100px">
                     <form method='POST' action='search.php'>    
-                        <input class='w3-round' placeholder='Bạn muốn tìm gì?' name='search' required>
+                        <input class='w3-round' placeholder='あなたは何を買いますか' name='search' required>
                         <button class='w3-button w3-small w3-orange w3-round' value='Search' type='submit'><i class="fa fa-search"></i></button>
                     </form>
                     </div>
@@ -125,13 +125,13 @@
     </div>
     <div id="style1" class="w3-block w3-center">
 
-        <button  class="w3-button">Sách nghệ thuật</button>
-        <button class="w3-button">Sách Trẻ Em</button>
-        <button class="w3-button ">Sách Thiếu Niên</button>
-        <button class="w3-button">Sách Lịch Sử</button>
-        <button class="w3-button" >Sách Nấu ăn</button>
-        <button class="w3-button">Sách Lãng Mạn</button>
-        <button class="w3-button">Sách Bí ẩn</button>
+        <button  class="w3-button">アートブック</button>
+        <button class="w3-button">児童書</button>
+        <button class="w3-button ">ティーンエイジャーの本</button>
+        <button class="w3-button">歴史書</button>
+        <button class="w3-button" >料理本</button>
+        <button class="w3-button">ロマンチックな本</button>
+        <button class="w3-button">謎の書</button>
     </div>
     <div id='style1'style="font-size:40px;text-align:center"><strong>Book at TDT-shoponline</strong></div>
     <table class="w3-border w3-table" width="100%">
